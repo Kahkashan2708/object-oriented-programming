@@ -46,3 +46,7 @@ class ClassName:
 * __init__ → constructor, automatically called when object is created
 
 * self → refers to the current object
+
+## Constructor (__init__ Method)
+
+A constructor is a special method used to initialize object data.
