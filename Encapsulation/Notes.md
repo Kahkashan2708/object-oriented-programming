@@ -50,3 +50,50 @@ class Student:
 s = Student()
 s.marks = 500   # Wrong but allowed
 ```
+---
+
+## 6. Example With Encapsulation
+``` class Student:
+    def __init__(self):
+        self.__marks = 90
+
+    def get_marks(self):
+        return self.__marks
+
+    def set_marks(self, value):
+        if 0 <= value <= 100:
+            self.__marks = value
+        else:
+            print("Invalid marks")
+```
+
+Here:
+
+* __marks is hidden
+
+* Access is controlled using methods
+
+## 7. Benefits of Encapsulation
+
+* Data security
+
+* Controlled data modification
+
+* Reduced complexity
+
+* Better abstraction
+
+* Easier debugging and testing
+---
+
+## 8. Real-World Analogy
+
+ATM Machine:
+
+* Money is hidden inside the machine
+
+* Users interact only through buttons and PIN
+
+* Direct access to cash is restricted
+
+* This controlled access is encapsulation.
