@@ -1,14 +1,7 @@
-
----
-
 ##  Encapsulation
-
-```python
 """
 Encapsulation in Python
-This file demonstrates data hiding and controlled access
-using private variables and public methods.
-"""
+This file demonstrates data hiding and controlled access using private variables and public methods. """
 
 # Example 1: Encapsulation using private variables
 
