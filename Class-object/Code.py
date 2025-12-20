@@ -8,7 +8,7 @@ class Student:
 # Here, s1 is an object (instance) of the Student class.
 # The constructor (__init__) is called automatically.
 
-s1 = Student("Kahkashan", 101)
+s1 = Student("Kahkashan", 14)
 
 # Accessing Attributes
 # Attributes are accessed using the object name and dot operator.
@@ -53,7 +53,7 @@ obj.show()
 
 #  Instance Variables vs Class Variables
 class StudentDetails:
-    college = "ABC University"   # class variable (shared)
+    college = "IIT Madras"   # class variable (shared)
 
     def __init__(self, name):
         self.name = name         # instance variable (object-specific)
