@@ -66,6 +66,8 @@ Python supports the following types of inheritance:
 
 Method overriding occurs when a child class provides its own implementation of a parent class method.
 
+When a child class defines a method with the same name as a method in the parent class, the child’s method overrides the parent’s method.
+
 
 ```python
 class Animal:
