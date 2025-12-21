@@ -60,4 +60,42 @@ Python supports the following types of inheritance:
 
 (d) Hierarchical Inheritance
 
-(e) Hybrid Inheritance
+---
+## 7. Method Overriding
+
+Method overriding occurs when a child class provides its own implementation of a parent class method.
+
+
+```python
+class Animal:
+    def sound(self):
+        print("Animal sound")
+
+class Dog(Animal):
+    def sound(self):
+        print("Bark")
+```
+---
+## 8. super() Function
+
+The super() function is used to call methods or constructors of the parent class.
+
+
+```puyton
+class Parent:
+    def __init__(self):
+        print("Parent constructor")
+
+class Child(Parent):
+    def __init__(self):
+        super().__init__()
+        print("Child constructor")
+```
+
+## Benefits of Inheritance
+
+* Code reusability
+
+* Faster development
+
+* Better readability and easier maintenance
