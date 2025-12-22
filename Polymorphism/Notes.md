@@ -65,4 +65,97 @@ Example:
 class Calculator:
     def add(self, a, b=0, c=0):
         return a + b + c
+```
+---
+## 7. Operator Overloading
 
+Operator overloading allows operators to behave differently for different data types.
+
+Example:
+```python
+print(10 + 20)      # Addition
+print("Hello" + "World")  # String concatenation
+```
+
+## 8. Run-Time Polymorphism
+
+Run-time polymorphism occurs during program execution.
+It is achieved using:
+
+* Method overriding
+
+* Inheritance
+
+## 9. Method Overriding and Polymorphism
+
+Method overriding allows a child class to provide its own implementation of a parent class method.
+
+```python
+class Animal:
+    def sound(self):
+        print("Animal makes a sound")
+
+class Dog(Animal):
+    def sound(self):
+        print("Dog barks")
+```
+
+Calling the same method gives different output.
+
+## 10. Polymorphism Using Inheritance
+```python
+class Cat(Animal):
+    def sound(self):
+        print("Cat meows")
+
+animals = [Dog(), Cat()]
+
+for animal in animals:
+    animal.sound()
+```
+
+Same method call → different behavior.
+
+## 11. Polymorphism Without Inheritance (Duck Typing)
+
+Python supports polymorphism even without inheritance.
+This is called **duck typing**.
+
+“If it looks like a duck and quacks like a duck, it is a duck.”
+
+Example:
+
+``python
+class Bird:
+    def fly(self):
+        print("Bird flies")
+
+class Airplane:
+    def fly(self):
+        print("Airplane flies")
+
+def make_it_fly(obj):
+    obj.fly()
+```
+## 12. Benefits of Polymorphism
+
+* Code reusability
+
+* Extensibility
+
+* Cleaner code
+
+* Loose coupling
+
+* Better abstraction
+
+---
+## Difference Between Method Overloading and Method Overriding
+
+| Feature            | Method Overloading        | Method Overriding          |
+|--------------------|---------------------------|----------------------------|
+| Happens in         | Same class                | Parent–child class         |
+| Method name        | Same                      | Same                       |
+| Parameters         | Different                 | Same                       |
+| Binding time       | Compile-time              | Run-time                   |
+---
