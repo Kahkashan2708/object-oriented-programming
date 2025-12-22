@@ -125,7 +125,7 @@ This is called **duck typing**.
 
 Example:
 
-``python
+```python
 class Bird:
     def fly(self):
         print("Bird flies")
